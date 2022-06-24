@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Testing Api</title>
+    </head>
+    <body>
+        <h1>Texting out Api</h1>
+
+        <form method="post" action="/v1/flights">
+            <input type="text" name="title" placeholder="Enter Titlte" > <br> <br>
+            <input type="number" name="price" placeholder="Enter Price"> <br> <br>
+            <input type="date" name="date"  placeholder="dd-mm-yyyy" value="" >
+            <button type="submit">Submit</button>
+        </form><br><br> <br>
+
+        <form action="/flights/1?_method=PUT" method="POST">
+            <input type="text" name="title" placeholder="Enter Titlte" > <br> <br>
+            <input type="number" name="price" placeholder="Enter Price"> <br> <br>
+           
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>
