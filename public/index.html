@@ -4,20 +4,21 @@
         <title>Testing Api</title>
     </head>
     <body>
-        <h1>Texting out Api</h1>
+        <h1><b> BOOKING FLIGHT API HOME PAGE</b></h1>
+       <h3>======= BASIC ROUTES =========</h3>  
+       <p><b> Get All Available Flights </b><br>
+         http Verb = GET <br> http://localhost:3000/v1/flights</p>
 
-        <form method="post" action="/v1/flights">
-            <input type="text" name="title" placeholder="Enter Titlte" > <br> <br>
-            <input type="number" name="price" placeholder="Enter Price"> <br> <br>
-            <input type="date" name="date"  placeholder="dd-mm-yyyy" value="" >
-            <button type="submit">Submit</button>
-        </form><br><br> <br>
+<p> <b> Single Flight by Id </b><br>http Verb = GET <br>//localhost:3000/v1/flights/0</p>
 
-        <form action="/flights/1?_method=PUT" method="POST">
-            <input type="text" name="title" placeholder="Enter Titlte" > <br> <br>
-            <input type="number" name="price" placeholder="Enter Price"> <br> <br>
-           
-            <button type="submit">Submit</button>
-        </form>
+<p><b> Creat new Flight </b><br> http Verb = POST <br>
+    http://localhost:3000/v1/flights</p>
+
+<h4>NB: the time for the flights are programatically generated <br> // There is no need for time to be provided when creating a new Flight <br> // date for the flight strictly follows the "YYYY/MM/DD" format</h4>
+
+<p> <b> Update Flight Id http </b><br> Verb = UPDATE <br> http://localhost:3000/v1/flights/0 </p> 
+   <h4> NB: the time for the flights are programatically generated <br> There is no need for time to be provided when creating a new Flight <br> date for the flight strictly follows the "YYYY/MM/DD" format
+
+<p> <b> Delete Flight by Id </b><br> http Verb = DELETE <br> http://localhost:3000/v1/flights/0 </p>
     </body>
 </html>

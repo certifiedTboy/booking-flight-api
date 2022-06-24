@@ -10,29 +10,45 @@ The API runs on PORT 3000
 The root page is served on http://localhost:3000
 
 ======= BASIC ROUTES =========
+
 // Get All Available Flights
+
 http Verb = GET
+
 http://localhost:3000/v1/flights
 
 // Get Single Flight by Id
+
 http Verb = GET
+
 http://localhost:3000/v1/flights/0
 
 // Creat new Flight
+
 http Verb = POST
+
 http://localhost:3000/v1/flights
 
-NB: the time for the flights a programatically generated
+NB: the time for the flights are programatically generated
+
 // There is no need for time to be provided when creating a new Flight
+
 // date for the flight strictly follows the "YYYY/MM/DD" format
 
 // Update Flight Id
+
 http Verb = UPDATE
+
 http://localhost:3000/v1/flights/0
-NB: the time for the flights a programatically generated
+
+NB: the time for the flights are programatically generated
+
 // There is no need for time to be provided when creating a new Flight
+
 // date for the flight strictly follows the "YYYY/MM/DD" format
 
 //Delete Flight by Id
+
 http Verb = DELETE
+
 http://localhost:3000/v1/flights/0
