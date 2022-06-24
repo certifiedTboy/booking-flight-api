@@ -13,10 +13,7 @@ const {
   checkDateFormat,
   checkPriceFormat,
 } = require("../middlewares/index");
-const methodOverride = require("method-override");
 const router = express.Router();
-
-router.use(methodOverride("method"));
 
 // get all Flights Route
 router.get("/", getAllFlights);

@@ -1,5 +1,6 @@
 const Flights = require("../models/flight.model");
 const { formatTime } = require("../utils/timeFormat");
+// var moment = require('moment');
 
 // create new Flight function
 exports.createFlight = async (req, res) => {
