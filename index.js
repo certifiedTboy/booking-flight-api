@@ -10,10 +10,6 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.use(express.static(path.join(__dirname, "public")));
-// send Api home page and documentation on web browser
-app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "index.html"));
-});
 
 app.use(cors());
 app.use(json());
@@ -21,6 +17,11 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 // API versioning
 app.use("/v1", apiV1);
+
+// send Api home page and documentation on web browser
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "index.html"));
+});
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
